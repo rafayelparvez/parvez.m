@@ -1,0 +1,397 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  :root {
+    --col1: #01c986; /* Initial color */
+  }
+
+  /* Smooth transition effect */
+  * {
+    transition: all 1s ease;
+  }
+
+
+/* COMMON CSS */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 16px;
+   font-weight: 400;
+   font-family: "Poppins", sans-serif;
+}
+body {
+   background: linear-gradient(140deg, var(--bgcol1), var(--bgcol2));
+   color: var(--col2);
+}
+:root {
+    --col3   : #ff004f;
+    --col1   : #01c986;
+    --col9   : #ae01c9;
+    --col8   : #01b5c9;
+    --col7   : #c93001;
+    --col6   : #c9a101;
+    --col5   : #19c901;
+    --col4   : #f518ba;
+    --col2   : #fff;
+    --bgcol1 : #090a21;
+    --bgcol2 : #0b012f;
+
+
+    --poppins   : "Poppins", sans-serif;
+}
+.container {
+   padding: 10px 10%;     
+}
+html {
+   scroll-behavior: smooth;
+}
+/* END COMMON CSS */
+/* HEADER CSS */
+
+.header {
+   width: 100%;
+   height: 100vh;
+   background: url(../images/bgimg.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: right;
+}
+.nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.nav a{
+   text-decoration: none;
+   color: var(--col2);
+   cursor: pointer;
+}
+nav .bx {
+   display: none;
+}
+.logo {
+   font-size: 35px;
+   font-weight: 600;
+}
+.logo span {
+   font-size: 35px;
+   font-weight: 600;
+   color: var(--col1);
+}
+nav ul li {
+   margin: 0 20px;
+   display: inline-block;
+   list-style: none;
+} 
+nav ul li a {
+   text-decoration: none;
+   color: var(--col2);
+   position: relative;
+}
+nav ul li a::after {
+   content: '';
+   width: 0;
+   height: 3px;
+   background: var(--col1);
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   transition: .5s;   
+}
+nav ul li a:hover::after {
+   width: 100%;
+}
+.hero-txt {
+   width: 50%;
+   margin-top: 15%;
+}
+.hero-txt h3 {
+   font-size: 22px;
+}
+.hero-txt h1 {
+   margin: 20px 0;
+   font-size: 65px;
+   font-weight: 700;
+   line-height: 66px;
+}
+.hero-txt h1 span {
+   font-size: 65px;
+   font-weight: 700;   
+   color: var(--col1);
+}
+
+.sci-btn a {
+   display: inline-flex;
+   text-decoration: none;
+   padding: 10px;
+   border: 2px solid var(--col1);
+   border-radius: 50%;
+   font-size: 30px;
+   color: var(--col1);
+   margin: 20px 0;
+   margin-right: 8px;
+   transition: .5s;
+}
+.sci-btn a:hover {
+   background: var(--col1);
+   color: var(--bgcol2);
+   box-shadow: 0 0 10px var(--col1);
+}
+/* END HEADER CSS */
+/* About CSS */
+.about {
+   padding: 80px 0;
+}
+.row {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.col1 {
+   background: url(../images/bgimg.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   flex-basis: 35%;
+   border: 1px solid rgb(255, 255, 255, 0.15);
+   border-radius: 15px;
+   box-shadow: 0 0 10px rgb(255, 255, 255, 0.15);   
+   overflow: hidden;
+}
+/* .col1 img {
+   width: 100%;
+   height: 380px;
+   margin-bottom: -8px;  
+} */
+.col2 {
+   flex-basis: 60%;
+}
+.sub-title {
+   font-size: 45px;
+   font-weight: 600;
+   color: var(--col2);
+}
+.tab-titles {
+   display: flex;
+   margin: 20px 0 40px;
+}
+.tab-links {
+   margin-right: 50px;
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+   position: relative;
+}
+.tab-links::after {
+   content: '';
+   width: 0;
+   height: 3px;
+   background: var(--col1);
+   position: absolute;
+   left: 0;
+   bottom: -8px;
+   transition: .5s;
+}
+.tab-links.active-link::after {
+   width: 50%;
+}
+.tab-contents ul li {
+   list-style: none;
+   margin: 10px 0;
+}
+.tab-contents ul li span {
+   font-size: 14px;
+   color: var(--col1);
+}
+.tab-contents {
+   display: none;
+}
+.tab-contents.active-tab {
+   display: block;
+}
+/* END About CSS */
+/* SERVICES CSS */
+.services {
+   padding: 30px 0;
+}
+.service-list, .work-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 40px;
+   margin-top: 50px;
+}
+.service-list div {
+   background: #262626;
+   padding: 40px;
+   border-radius: 10px;
+   transition: background .5s, transform .5s;
+}
+.service-list div i {
+   font-size: 50px;
+}
+.service-list div h2 {
+   font-size: 25px;
+   font-weight: 500;
+   margin: 30px 0 10px;
+}
+.service-list div p {
+   margin-bottom: 20px;
+}
+.service-list div a {
+   text-decoration: none;
+   color: var(--col2);
+}
+.service-list div:hover {
+   background: var(--col1);
+   transform: translateY(-10px);
+}
+.service-list div a i {
+   font-size: 20px;
+   margin-left: 10px;
+}
+/* END SERVICES CSS */
+/* PORTFOLIO CSS */
+.portfolio {
+   padding: 50px 0;
+}
+.work {
+   height: 500px;
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+}
+.work img {
+   width: 100%;
+   border-radius: 10px;
+   display: block;
+}
+.layer {
+   width: 100%;
+   height: 0;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), var(--col1));
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0 40px;
+   text-align: center;
+   transition: height .5s;
+}
+.layer h3 {
+   font-size: 25px;
+   font-weight: 500;
+   display: none;
+   transition: .5s;
+}
+.layer p {
+   margin: 20px 0;
+   display: none;
+   transition: .5s;      
+}
+.layer a {
+   font-size: 25px;
+   line-height: 60px;
+   color: var(--col1);
+   text-decoration: none;
+   width: 60px;
+   height: 60px;
+   background: var(--col2);
+   text-align: center;
+   border-radius: 50%;
+   display: none;
+   transition: .5s;         
+}
+.work:hover .layer {
+   height: 100%;
+}
+.work:hover .layer h3, .layer p, .layer a {
+   display: block;
+}
+/* END PORTFOLIO CSS */
+/*CONTACT CSS */
+.contact-left {
+   flex-basis: 35%;
+}
+.contact-left p {
+   margin-top: 30px;
+}
+.contact-left p i {
+   font-size: 25px;
+   color: var(--col1);
+   margin-right: 15px;
+}
+.sci-icons {
+   margin-top: 30px;
+}
+.sci-icons a {
+   color: #ababab;
+   text-decoration: none;
+   margin-right: 15px;
+   display: inline-block;
+   transition: transform .5s;
+}
+.sci-icons a i {
+   font-size: 30px;
+}
+.sci-icons a:hover {
+   transform: translateY(-5px);
+}
+.btn {
+   display: block;
+   margin: 50px auto;
+   width: fit-content;
+   border: 1px solid var(--col1);
+   padding: 12px 25px;
+   border-radius: 6px;
+   text-decoration: none;
+   color: var(--col2);
+}
+.btn.btn2 {
+   display: inline-block;
+   background: var(--col1);
+}
+.contact-right {
+   flex-basis: 60%;
+}
+.contact-right form {
+   width: 100%;
+}
+form input, form textarea {
+   width: 100%;
+   border: 0;
+   outline: none;
+   background: #262626;
+   padding: 15px;
+   margin: 15px 0;
+   color: var(--col2);
+   font-size: 18px;
+   border-radius: 6px   ;
+}
+form .btn2 {
+   margin-top: 20px;
+   cursor: pointer;
+}
+/* END CONTACT CSS */
+/* COPYRIGHT CSS */
+.copyright {
+   width: 100%;
+   text-align: center;
+   padding: 25px 0;
+   background: #262626;
+   font-weight: 300;
+   margin-top: 20px;
+}
+.copyright .cp {
+   display: inline-block;
+   font-size: 16px;
+   font-weight: 300;
+}
+.copyright .cp span {
+   font-size: 16px;
+   font-weight: 300;   
+}
+/* END COPYRIGHT CSS */
