@@ -61,19 +61,54 @@ nav ul .bx {
    background-color: rgb(0, 0, 0, 0.25);
 }
 /* END HEADER CSS */
+/* About CSS */
 .col1 {
-   height: 200px;
+   height: 300px;
    flex-basis: 100%;
+   margin-bottom: 20px;
 }
 .col2 {
    flex-basis: 100%;
+   text-align: center;
 }
+.sub-title {
+   font-size: 30px;
+}
+.col2 p {
+   font-size: 14px;
+}
+.tab-titles {
+   justify-content: center;
+}
+.tab-links {
+   margin-right: 25px;
+   font-size: 16px;
+}
+.tab-links:last-child {
+   margin-right: 0;
+}
+/* END About CSS */
+/* SERVICES CSS */
+.service-list div {
+   padding: 20px;
+   text-align: center;
+}
+.service-list div i {
+   font-size: 35px;
+}
+.service-list div h2 {
+   font-size: 22px;
+   margin: 30px 0 10px;
+}
+/* END SERVICES CSS */
+/*CONTACT CSS */
 .contact-left {
    flex-basis: 100%;
 }
 .contact-right {
    flex-basis: 100%;
 }
+/* END CONTACT CSS */
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -136,6 +171,37 @@ nav ul .bx {
    background-color: rgb(0, 0, 0, 0.25);
 }
 /* END HEADER CSS */
+/* About CSS */
+.col1 {
+   height: 300px;
+   flex-basis: 100%;
+   margin-bottom: 20px;
+}
+.col2 {
+   flex-basis: 100%;
+   text-align: center;
+}
+.sub-title {
+   font-size: 40px;
+}
+.tab-titles {
+   justify-content: center;
+}
+.tab-links {
+   margin-right: 25px;
+}
+.tab-links:last-child {
+   margin-right: 0;
+}
+/* END About CSS */
+/*CONTACT CSS */
+.contact-left {
+   flex-basis: 100%;
+}
+.contact-right {
+   flex-basis: 100%;
+}
+/* END CONTACT CSS */
 
 }
 
@@ -183,7 +249,7 @@ nav ul .bx {
 }
 .hero-txt {
    width: 100%;
-   margin-top: 50%;
+   margin-top: 35%;
 }
 .hero-txt h3 {
    font-size: 18px;
@@ -200,16 +266,24 @@ nav ul .bx {
    background-color: rgb(0, 0, 0, 0.25);
 }
 /* END HEADER CSS */
-} 
+/* SERVICES CSS */
+.service-list div {
+   padding: 25px;
+}
+/* END SERVICES CSS */
+}
   
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+.hero-txt {
+   margin-top: 20%;
+}   
 .hero-txt h1 {
-   font-size: 40px;
+   font-size: 45px;
    line-height: 45px;
 }
 .hero-txt h1 span {
-   font-size: 40px;
+   font-size: 45px;
 }
  }
 
