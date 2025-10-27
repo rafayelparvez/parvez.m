@@ -62,7 +62,7 @@ html {
    align-items: center;
    justify-content: space-between;
 }
-.nav a{
+.nav a {
    text-decoration: none;
    color: var(--col2);
    cursor: pointer;
@@ -141,7 +141,7 @@ nav ul li a:hover::after {
 /* END HEADER CSS */
 /* About CSS */
 .about {
-   padding: 80px 0;
+   padding: 100px 0;
 }
 .row {
    display: flex;
@@ -213,7 +213,7 @@ nav ul li a:hover::after {
 /* END About CSS */
 /* SERVICES CSS */
 .services {
-   padding: 30px 0;
+   padding: 80px 0;
 }
 .service-list, .work-list {
    display: grid;
@@ -316,6 +316,9 @@ nav ul li a:hover::after {
 } */
 /* END PORTFOLIO CSS */
 /*CONTACT CSS */
+.contact {
+   padding: 35px 0;
+}
 .contact-left {
    flex-basis: 35%;
 }
@@ -389,7 +392,7 @@ form .btn2 {
    width: 100%;
    text-align: center;
    padding: 30px 0;
-   background: #262626;
+   background: #262626 !important;
    font-weight: 300;
 }
 .copyright .cp {
@@ -401,9 +404,7 @@ form .btn2 {
    font-size: 16px;
    font-weight: 300;   
 }
-
 /* END COPYRIGHT CSS */
-
 
 /* ? Parallax effect */
 
@@ -422,4 +423,3 @@ header {
   background: linear-gradient(140deg, var(--bgcol1), var(--bgcol2));
   z-index: 99;
 }
-
